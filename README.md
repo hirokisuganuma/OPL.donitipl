@@ -1,24 +1,18 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+開発環境の構築手順
+任意のディレクトリに
 
-* Ruby version
+git clone このリポジトリURL
 
-* System dependencies
+cd opl.donitipl
 
-* Configuration
+bundle
 
-* Database creation
+rails db:migrate
 
-* Database initialization
+rails s
 
-* How to run the test suite
+上記コマンドでローカルホストを立ち上げてデフォルトのYAY!You're on Rails!画面が確認できればOKです。
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+エラー踏まない形でできるよう調整しておりますが何かありましたら連絡ください。

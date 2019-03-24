@@ -3,11 +3,13 @@
 開発環境の構築手順
 任意のディレクトリに
 
-git clone このリポジトリURL
+git clone https://github.com/hirokisuganuma/opl.donitipl.git
 
 cd opl.donitipl
 
 bundle
+
+※もしここでYou must use Bundler 2 or greater with this lockfile.と表示された場合Gemfile.lockファイルを削除して改めてbundleコマンドを打ってください
 
 rails db:migrate
 

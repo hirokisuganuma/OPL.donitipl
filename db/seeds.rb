@@ -10,4 +10,6 @@ User.create!(name:  "管理者",
   email: "email@sample.com",
   )
 
-Question.create(title: 'テスト作成', content: 'テスト作成', user_id: 1)
+Question.create(title: 'テスト題名', content: 'テストコンテンツ', user_id: 1)
+
+Question.create(title: 'テスト題名２', content: 'テストコンテンツ２', user_id: 1)

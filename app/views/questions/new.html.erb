@@ -1,0 +1,16 @@
+<h1>質問投稿</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(:question, url: questions_new_path) do |f| %>
+
+      <%= f.label :title %>
+      <%= f.email_field :text, class: 'form-control' %>
+
+      <%= f.label :content %>
+      <%= f.password_field :text, class: 'form-control' %>
+
+      <%= f.submit "質問する", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

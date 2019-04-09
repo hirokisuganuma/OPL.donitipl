@@ -1,0 +1,22 @@
+<h1>All questions</h1>
+
+<ul class="questions">
+  <% @questions.each do |question| %>
+    
+      <li>質問の題名  <%=question.title%></li>
+      <li>質問の内容  <%=question.content%></li>
+      <li>質問者ID  <%=question.user_id%></li>
+    
+  <% end %>
+</ul>
+
+<style>
+.questions {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+  }
+}
+</style>

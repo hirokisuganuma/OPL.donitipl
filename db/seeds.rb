@@ -8,6 +8,8 @@
 
 User.create!(name:  "管理者",
   email: "email@sample.com",
+  password:              "foobar",
+  password_confirmation: "foobar",
   )
 
 Question.create(title: 'テスト題名', content: 'テストコンテンツ', user_id: 1)

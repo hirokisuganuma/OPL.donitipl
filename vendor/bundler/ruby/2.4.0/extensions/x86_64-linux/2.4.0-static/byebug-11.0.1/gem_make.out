@@ -1,0 +1,19 @@
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+/home/vagrant/.rbenv/versions/2.4.5/bin/ruby -r ./siteconf20190603-31819-3ewvsk.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20190603-31819-1bsau82/byebug

@@ -1,0 +1,93 @@
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+/home/vagrant/.rbenv/versions/2.4.5/bin/ruby -r ./siteconf20190603-31819-nxc54u.rb extconf.rb
+checking for rb_sym2str()... yes
+creating Makefile
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+make "DESTDIR="
+compiling duktape.c
+duk_error_macros.c: In function ‘duk_err_handle_error_fmt’:
+duk_error_macros.c:15:2: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+duk_error_macros.c:15:2: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+duk_api_stack.c: In function ‘duk__try_push_vsprintf’:
+duk_api_stack.c:3841:2: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+duk_api_stack.c:3841:2: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+duk_api_debug.c: In function ‘duk_debugger_attach’:
+duk_api_debug.c:215:19: warning: function might be candidate for attribute ‘noreturn’ [-Wsuggest-attribute=noreturn]
+duk_api_debug.c: In function ‘duk_debugger_detach’:
+duk_api_debug.c:236:19: warning: function might be candidate for attribute ‘noreturn’ [-Wsuggest-attribute=noreturn]
+duk_util_tinyrandom.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling duktape_ext.c
+duktape_ext.c: In function ‘encode_cesu8’:
+duktape_ext.c:111:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   long len = RSTRING_LEN(utf16) / 2;
+   ^
+duktape_ext.c: In function ‘decode_cesu8’:
+duktape_ext.c:135:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     unsigned short code = utf8_to_uv(ptr, &len);
+     ^
+duktape_ext.c:141:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE utf8res = rb_str_conv_enc(res, utf16enc, rb_utf8_encoding());
+   ^
+duktape_ext.c: In function ‘ctx_stack_to_value’:
+duktape_ext.c:172:7: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+       VALUE str = rb_str_new(buf, len);
+       ^
+duktape_ext.c: In function ‘raise_ctx_error’:
+duktape_ext.c:299:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   const char *name = duk_safe_to_string(ctx, -1);
+   ^
+duktape_ext.c:302:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   const char *message = duk_to_string(ctx, -1);
+   ^
+duktape_ext.c: In function ‘ctx_eval_string’:
+duktape_ext.c:325:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE source;
+   ^
+duktape_ext.c:348:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE res = ctx_stack_to_value(state, -1);
+   ^
+duktape_ext.c: In function ‘ctx_exec_string’:
+duktape_ext.c:370:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE source;
+   ^
+duktape_ext.c: In function ‘ctx_get_one_prop’:
+duktape_ext.c:407:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   duk_bool_t exists = duk_get_prop(ctx, -2);
+   ^
+duktape_ext.c: In function ‘ctx_get_nested_prop’:
+duktape_ext.c:428:7: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+       long len = RARRAY_LEN(props);
+       ^
+duktape_ext.c: In function ‘ctx_get_prop’:
+duktape_ext.c:466:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE res = ctx_stack_to_value(state, -1);
+   ^
+duktape_ext.c: In function ‘ctx_call_prop’:
+duktape_ext.c:490:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE prop;
+   ^
+duktape_ext.c:507:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE res = ctx_stack_to_value(state, -1);
+   ^
+duktape_ext.c: In function ‘ctx_initialize’:
+duktape_ext.c:656:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE options;
+   ^
+duktape_ext.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+linking shared-object duktape_ext.so
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/duktape-2.0.1.0/ext/duktape
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 duktape_ext.so ./.gem.20190603-31819-1km4t3v

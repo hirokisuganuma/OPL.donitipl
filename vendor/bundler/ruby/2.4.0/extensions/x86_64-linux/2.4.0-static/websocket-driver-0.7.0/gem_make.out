@@ -1,0 +1,15 @@
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+/home/vagrant/.rbenv/versions/2.4.5/bin/ruby -r ./siteconf20190603-31819-j6a5w4.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/vagrant/app/opldonichpj/opl.donitipl/vendor/bundler/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20190603-31819-13czin2

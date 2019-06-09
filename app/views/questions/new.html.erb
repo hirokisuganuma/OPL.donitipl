@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user, :question, url: questions_path, method: :post) do |f| %>
+    <%= form_for( :questions, url: questions_path, method: :post) do |f| %>
 
       <%= f.label :title %>
       <%= f.text_field :title, class: 'form-control' %>

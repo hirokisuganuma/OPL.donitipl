@@ -113,6 +113,8 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.2-x64-mingw32)
       mini_portile2 (~> 2.4.0)
+    pg (0.20.0)
+    pg (0.20.0-x64-mingw32)
     public_suffix (3.0.3)
     puma (3.12.1)
     rack (2.0.7)
@@ -209,6 +211,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   duktape
   jbuilder (~> 2.5)
+  pg (= 0.20.0)
   puma (~> 3.11)
   rails (~> 5.2.2)
   rb-readline
@@ -221,4 +224,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.17.2
+   2.0.1

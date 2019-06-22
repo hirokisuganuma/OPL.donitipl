@@ -33,3 +33,17 @@ h1 {
 .btn{
   display: inline-block;
 }
+
+.box {
+  margin: 10px auto;
+  width: 50%;
+  border: solid 1px #000000;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+.title {
+  margin: 10px auto;
+  width: 20%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}

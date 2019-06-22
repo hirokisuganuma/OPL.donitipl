@@ -1,11 +1,15 @@
 class QuestionsController < ApplicationController
 
   def index
-    @questions = Question.all
+    @questions = Question.all.order(id: "DESC").search(params[:search])
   end
 
   def new
     @question = Question.new
+  end
+  
+  def show
+    @question = Question.find(params[:id])
   end
 
   def create
@@ -17,6 +21,7 @@ class QuestionsController < ApplicationController
       redirect_to questions_new_path
     end
   end
+  
   
 private
 

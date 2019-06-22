@@ -1,16 +1,17 @@
-<h1>質問投稿</h1>
+<h1>ようこそ！<%=@user.name%>さん</h1>
 <div class="center">
-<%= link_to "Log out", logout_path, method: :delete, class: "btn btn-lg btn-primary" %>
+<%= link_to "ログアウト", logout_path, method: :delete, class: "btn btn-lg btn-primary" %>
+<%= link_to "みんなの質問を見る", questions_path,  class: "btn btn-lg btn-primary" %>
 </div>
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
     <%= form_for( :question, url: questions_path, method: :post) do |f| %>
 
-      <%= f.label :title %>
+      <%= f.label :題名 %>
       <%= f.text_field :title, class: 'form-control' %>
 
-      <%= f.label :content %>
-      <%= f.text_field :content, class: 'form-control' %>
+      <%= f.label :内容 %>
+      <%= f.text_area :content, size:"20x10",class: 'form-control' %>
 
       <%= f.submit "質問する", class: "btn btn-primary" %>
     <% end %>

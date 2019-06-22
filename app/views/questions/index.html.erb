@@ -1,22 +1,24 @@
-<h1>All questions</h1>
+<h1>みんなの質問</h1>
 
-<ul class="questions">
+<section class="container">
+<div class="col-md-3 col-md-offset-8 ">
+<p>タイトル検索</p>
+<%= form_tag(questions_path,:method => 'get') do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag 'Search', :title => nil %>
+<% end %>
+</div>
+</section>
+
+<div class="center">
+  <%= link_to "質問する", user_path(current_user), class: "btn btn-lg btn-primary" %>
   <% @questions.each do |question| %>
-    
-      <li>質問の題名  <%=question.title%></li>
-      <li>質問の内容  <%=question.content%></li>
-      <li>質問者ID  <%=question.user_id%></li>
-    
+    <div class="title"><%=question.title%>ForID<%=question.user_id%>さん</div>
+    <div class="box">
+      <%=question.content%>
+      <p style="text-align: right">
+        <%=time_ago_in_words question.created_at %>前の質問
+      </p>
+    </div>
   <% end %>
-</ul>
-
-<style>
-.questions {
-  list-style: none;
-  margin: 0;
-  li {
-    overflow: auto;
-    padding: 10px 0;
-  }
-}
-</style>
+</div>

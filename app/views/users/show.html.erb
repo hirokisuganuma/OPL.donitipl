@@ -5,7 +5,7 @@
 </div>
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-    <%= form_for( :question, url: questions_path, method: :post) do |f| %>
+    <%= form_for( :question, url: questions_path(@question), method: :post) do |f| %>
 
       <%= f.label :題名 %>
       <%= f.text_field :title, class: 'form-control' %>

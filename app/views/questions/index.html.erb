@@ -13,12 +13,12 @@
 <div class="center">
   <%= link_to "質問する", user_path(current_user), class: "btn btn-lg btn-primary" %>
   <% @questions.each do |question| %>
-    <div class="title"><%=question.title%>ForID<%=question.user_id%>さん</div>
+    <div class="title"><%=question.title%>/ForID<%=question.user_id%>さん</div>
+    
     <div class="box">
       <%=question.content%>
-      <p style="text-align: right">
-        <%=time_ago_in_words question.created_at %>前の質問
-      </p>
+      <div style="text-align: right"><%= link_to "この質問に回答する", question_path(question) %>
+      <%=time_ago_in_words question.created_at %>前の質問</div>
     </div>
   <% end %>
 </div>

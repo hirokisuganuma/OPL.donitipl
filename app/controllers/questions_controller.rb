@@ -10,8 +10,8 @@ class QuestionsController < ApplicationController
   
   def show
     @question = Question.find(params[:id])
+    @answers = @question.answers.order(id: "DESC")
   end
-
   def create
     @question = current_user.questions.build(question_params)
     if @question.save

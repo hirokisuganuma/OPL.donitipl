@@ -1,0 +1,31 @@
+<h1><%=@question.title%></h1>
+
+<div class="center">
+<%= link_to "みんなの質問を見る", questions_path,  class: "btn btn-lg btn-primary" %>
+
+
+<div class="box">
+      <%=@question.content%>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for( :answer, url: question_answer_path(@question.id), method: :post) do |f| %>
+
+      <%= f.label :回答 %>
+      <%= f.text_area :response, size:"20x10",class: 'form-control' %>
+
+      <div style="text-align: left"><%= f.submit "回答する", class: "btn btn-primary" %></div>
+    <% end %>
+  </div>
+</div>
+
+<% @answers.each do |answer| %>
+    <div class="box">
+      <%=answer.response%>
+      <div style="text-align: right">
+      <%=time_ago_in_words answer.created_at %>前の質問
+      </div>
+    </div>
+  <% end %>
+</div>

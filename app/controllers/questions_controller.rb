@@ -18,7 +18,8 @@ class QuestionsController < ApplicationController
       flash[:success] = "質問が完了しました。"
       redirect_to questions_index_path
     else
-      redirect_to questions_new_path
+      flash[:danger] = "投稿に失敗しました。"
+      redirect_to user_path(current_user)
     end
   end
   

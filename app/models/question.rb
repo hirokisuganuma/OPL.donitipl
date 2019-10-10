@@ -11,7 +11,7 @@ class Question < ApplicationRecord
   belongs_to :user, dependent: :destroy
   
   has_many :answers
-  
+  #質問はユーザに紐づいた回答を持っている
   validates :title,  presence: true
 
   validates :content,  presence: true

@@ -10,7 +10,7 @@ class Question < ApplicationRecord
     
   belongs_to :user, dependent: :destroy
   
-  has_many :answers
+  has_many :answers, through: :user
   #質問はユーザに紐づいた回答を持っている
   validates :title,  presence: true
 

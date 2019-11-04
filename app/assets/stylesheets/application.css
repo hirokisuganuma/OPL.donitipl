@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ .label{
+    margin: 15px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+    float: left;
+    cursor: pointer;
+  }
+   
+  /*↓ラジオボタンが選択された時に適用されるCSS*/
+  .check{
+    background:#0B2BD7;
+    color: #fff;
+  }

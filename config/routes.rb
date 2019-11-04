@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'hoge/show',as:'hogehoge'
   root 'application#top'
   get 'sessions/new'
   get '/signup', to: 'users#new'

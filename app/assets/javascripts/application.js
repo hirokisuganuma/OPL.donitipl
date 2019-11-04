@@ -14,3 +14,24 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery
+//= require jquery_ujs
+
+val='';
+$(function () {
+ changeBtn(val);
+ $('.radio_btn').click(function(){
+   val = $(this).val();
+   changeBtn(val);
+ });
+});
+
+function changeBtn(val){
+ if (val == 1){
+   $('.contract label').removeClass('check');
+   $('#continuation').addClass('check');
+   }else{
+   $('.contract label').removeClass('check');
+   $('#change').addClass('check');
+   }
+}

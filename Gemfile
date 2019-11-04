@@ -22,10 +22,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails-i18n'
-
+gem "jquery-rails"
 
 group :development do
   gem 'sqlite3', '1.3.13'
+  gem 'pry-rails'
 end
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

@@ -11,6 +11,7 @@ class QuestionsController < ApplicationController
   def show
     @question = Question.find(params[:id])
     @answers = @question.answers.order(id: "DESC")
+    @testarray = [["レディース",001],["メンズ",002],["キッズ", 003]]
   end
   def create
     @question = current_user.questions.build(question_params)
